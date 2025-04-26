@@ -1,0 +1,11 @@
+Flask
+flask_sqlalchemy
+flask_bcrypt
+flask_migrate
+pandas
+matplotlib
+seaborn
+nbconvert
+nbformat
+asyncio
+scikit-learn

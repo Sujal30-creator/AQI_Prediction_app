@@ -14,7 +14,13 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 import asyncio
-from asyncio import WindowsSelectorEventLoopPolicy
+import sys
+
+if sys.platform.startswith('win'):
+    from asyncio import WindowsSelectorEventLoopPolicy
+    import asyncio
+    asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())
+
 import pickle
 import Updated_Visualization as vis
 import traceback
